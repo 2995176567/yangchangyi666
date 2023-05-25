@@ -8,7 +8,9 @@
 		<title></title>
 		<style>
 			*{margin: 0;
-			padding: 0;}
+			padding: 0;
+			list-style: none;
+			}
 			
 			ul{list-style: none;}
 			
@@ -42,19 +44,24 @@
 				height:50px;
 			}
 			.nav>li>a:hover{
-				color:red;
-				background-color: yellow;
+				color:white;
+				background-color: firebrick;
 			}
 			
 			body {
-						background-image: url('picture/2.jpg');
-						background-size: cover;
-						background-repeat: no-repeat;
+					background-image: url('picture/2.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
 					}
 			.b{
-				
-					background-color: ;
-				
+				background-color:#5AC2E7;
+			}
+			a{
+				text-decoration: none;
+				}
+			.nav>li>ul>li>a:hover{
+				color: white;
+				background-color: firebrick;
 			}
 		</style>
 		
@@ -65,11 +72,13 @@
 			
 			
 		</script>
-		<audio src="vedio/music.mp3" controls="controls" muted="muthd" autoplay="autoplay">
+		<!-- <audio src="a.mp3" controls="controls" muted="muthd" autoplay="autoplay">
 				您的浏览器不支持audio标签。
-			</audio>
+			</audio> -->
 	
-		
+		<audio id="music" src="a.mp3" loop="loop" autoplay="autoplay" >
+		</audio>
+
 	
 
 		<ul class="nav">
