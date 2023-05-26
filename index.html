@@ -52,6 +52,7 @@
 					background-image: url('picture/2.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
+					
 					}
 			.b{
 				background-color:#5AC2E7;
@@ -63,6 +64,7 @@
 				color: white;
 				background-color: firebrick;
 			}
+			
 			@media only screen and (max-width: 600px) {
 			  body {
 			    background-size: contain;
@@ -74,15 +76,20 @@
 	<body>
 		<script>
 			alert("欢迎来到你逸哥的恐怖网站")
-			
-			
+				
+				window.addEventListener('resize', function() {
+				  if (window.innerHeight < 600) { // 当屏幕高度小于600像素时
+				    document.body.style.backgroundPosition = 'center bottom'; // 调整背景位置
+				  } else {
+				    document.body.style.backgroundPosition = 'center center'; // 恢复默认值
+				  }
+				});
 		</script>
-		<!-- <audio src="a.mp3" controls="controls" muted="muthd" autoplay="autoplay">
-				您的浏览器不支持audio标签。
-			</audio> -->
 	
 		<audio id="music" src="a.mp3" loop="loop" autoplay="autoplay" >
 		</audio>
+		
+		
 
 	
 
