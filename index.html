@@ -7,13 +7,14 @@
 		
 		<title></title>
 		<style>
-			*{margin: 0;
-			padding: 0;
-			list-style: none;
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
 			}
-			
-			ul{list-style: none;}
-			
+			ul{
+				list-style: none;
+				}
 			.nav{
 				width: 500px;
 				height: 50px;
@@ -29,8 +30,19 @@
 				text-align: center;
 				line-height:50px;
 			}
-			
+			.nav>li:nth-child(1)>ul{
+				display: none;
+			}
 			.nav>li:nth-child(2)>ul{
+				display: none;
+			}
+			.nav>li:nth-child(3)>ul{
+				display: none;
+			}
+			.nav>li:nth-child(4)>ul{
+				display: none;
+			}
+			.nav>li:nth-child(5)>ul{
 				display: none;
 			}
 			.nav>li:hover>ul{
@@ -52,7 +64,6 @@
 					background-image: url('picture/2.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
-					
 					}
 			.b{
 				background-color:#5AC2E7;
@@ -64,7 +75,6 @@
 				color: white;
 				background-color: firebrick;
 			}
-			
 			
 		</style>
 		
@@ -84,17 +94,38 @@
 	
 
 		<ul class="nav">
-			<li><a href="#">中式恐怖</a></li>
+			<li><a href="#">中式恐怖</a>
+				<ul class="b">
+					<li><a href="#">京城八十一号</a></li>
+					<li><a href="#">阴阳镇怪谈</a></li>
+					<li><a href="#">西游降魔</a></li>
+				</ul></li>
 			<li ><a href="#">恐怖美剧</a>
 				<ul class="b">
 					<li><a href="#">鬼作秀系列</a></li>
 					<li><a href="#">惊悚50州</a></li>
 					<li><a href="#">恐怖大师</a></li>
+					<li><a href="#">阴阳魔界</a></li>
 				</ul>
 			</li>
-			<li><a href="#">恐怖韩剧</a></li>
-			<li><a href="#">恐怖日剧</a></li>
-			<li><a href="#">其他恐怖</a></li>
+			<li><a href="#">恐怖韩剧</a>
+				<ul class="b">
+					<li><a href="#">釜山行</a></li>
+					<li><a href="#">昆池岩</a></li>
+					<li><a href="#">哭悲</a></li>
+				</ul></li>
+			<li><a href="#">恐怖日剧</a>
+				<ul class="b">
+					<li><a href="#">咒怨</a></li>
+					<li><a href="#">世界奇妙物语</a></li>
+					<li><a href="#">怪谈新耳袋</a></li>
+				</ul></li>
+			<li><a href="#">其他恐怖</a>
+				<ul class="b">
+					<li><a href="#">血色旅途</a></li>
+					<li><a href="#">黑镜</a></li>
+					<li><a href="#">九号秘事</a></li>
+				</ul></li>
 		</ul>
 	
 		
